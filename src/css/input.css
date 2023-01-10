@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
@@ -95,19 +98,15 @@
   width: 0%;
   left: 50%;
 }
-
-.menu.open {
-  background-color: rgb(161, 48, 48);
-  width: 100%;
-  height: 10rem;
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
+.menu-open {
+  height: 0vh;
+  transition: all 0.3s ease-in-out;
 }
 
+.menu-open.active {
+  height: 100vh;
+  padding-top: 2rem;
+}
 .container {
   width: 100%;
   padding-right: 15px;
@@ -115,6 +114,9 @@
   margin-right: auto;
   margin-left: auto;
   transition: all 0.2s cubic-bezier(0.17, 0.88, 0.75, 0.96);
+}
+.oh {
+  overflow: hidden;
 }
 
 /* 

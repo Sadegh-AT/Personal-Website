@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="bg-appbg font-Poppins">
+
     <header class="header shadow-lg shadow-shadowcolor relative bg-appbg">
         <div class="container">
             <nav class="nav bg-appbg flex justify-between items-center py-3 px-4 sm:px-0">
@@ -20,17 +19,17 @@
                 </div>
                 <div>
                     <ul
-                        class=" bg-appbgmenu justify-center items-center text-xl text-textcolor space-x-12 hidden xl:flex">
+                        class=" bg-appbg menu justify-center items-center text-xl text-textcolor space-x-12 hidden xl:flex">
                         <li>
                             <a href="#" class="text-TiffanyBlue">Home</a>
                         </li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="#" class="">About us</a></li>
 
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" class="">Resume</a></li>
+                        <li><a href="#" class="">Services</a></li>
+                        <li><a href="#" class="">Portfolio</a></li>
+                        <li><a href="#" class="">Pricing</a></li>
+                        <li><a href="#" class="">Contact</a></li>
                     </ul>
                     <div id="nav-icon3" class="xl:hidden">
                         <span></span>
@@ -38,24 +37,11 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <!-- <div>
-                        <svg class=" xl:hidden width=" 54px" height="54px" viewBox="0 0 24.00 24.00"
-                            xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                stroke="#CCCCCC" stroke-width="0.4800000000000001"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path class="fill-TiffanyBlue stroke-TiffanyBlue" d="M3 12H21M3 6H21M3 18H21"
-                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </g>
-                        </svg>
-                    </div> -->
                 </div>
             </nav>
         </div>
-        <div class=" bg-appbg menu-open w-full h-[0vh] overflow-hidden bg-slate-600 flex justify-center pt-10">
-            <ul class="menu text-3xl space-y-11 text-center text-textcolor">
+        <div class=" bg-app menu-open w-full overflow-hidden bg-appbg flex justify-center xl:hidden">
+            <ul class="menu-1 text-3xl space-y-11 text-center text-textcolor">
                 <li>
                     <a href="#" class="text-TiffanyBlue">Home</a>
                 </li>
@@ -70,10 +56,57 @@
         </div>
     </header>
 
+    <main>
+
+        <section class="mt-20">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12 col-md-6 md:order-4 flex flex-col items-center justify-center">
+                        <div
+                            class="w-[20rem] h-[20rem] sm:w-[25rem] sm:h-[25rem] md:w-[22rem] md:h-[22rem] lg:w-[25rem] lg:h-[25rem] xl:w-[28rem] xl:h-[28rem] xxl:w-[32rem] xxl:h-[32rem] shadow-2xl shadow-shadowcolor rounded-[50%] mb-7 mx-auto flex justify-center items-center overflow-hidden border-white border-[1rem] ">
+                            <img class="w-full object-cover h-full" src="images/header-avatar.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 md:order-3 flex flex-col items-start justify-center">
+                        <div class="text-center md:text-start">
+                            <h3 class="font-Poppins text-TiffanyBlue text-[1.5rem] font-extralight">Hello, IM
+                                <span class="text-PrincetonOrange ">White Alexa</span>
+                            </h3>
+                            <h2 class="truncate font-PoppinsSemiBold mb-1 text-TiffanyBlue text-[2.3rem] font-light">
+                                Creative
+                                Designer
+                            </h2>
+                            <p class="font-Poppins text-textcolor">Freelancer Web/ Mobile UI/UX Designer with Motion
+                                Graphics</p>
+                            <div class="mt-14 space-x-5">
+                                <a href="#"
+                                    class="bg-TiffanyBlue hover:brightness-110 active:brightness-90 px-8 py-4 rounded-3xl text-white shadow-2xl shadow-TiffanyBlue">Hire
+                                    Me</a>
+                                <a href="#"
+                                    class="bg-PortlandOrange hover:brightness-110 active:brightness-90 px-8 py-4 rounded-3xl text-white shadow-2xl shadow-PortlandOrange">Get
+                                    Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="1922.769" height="247.234"
+                    viewBox="0 0 1922.769 247.234">
+                    <path id="Shape"
+                        d="M71.608,963.395s37.543,109.849,301.18,68.106,252.483-137.226,544.85-30.757,358.107,28.729,547.046-37.349,311.35,125.2,529.693,15.35v217.627H71.608Z"
+                        transform="translate(-71.608 -949.138)" fill="#0cbfae" />
+                </svg>
+
+
+            </div>
+        </section>
+
+    </main>
+
     <script src="js/nav-icon.js"></script>
     <script src="js/index.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
