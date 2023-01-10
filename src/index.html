@@ -12,14 +12,15 @@
 </head>
 
 <body class="">
-    <header class="header shadow-lg shadow-shadowcolor">
+    <header class="header shadow-lg shadow-shadowcolor relative bg-appbg">
         <div class="container">
-            <nav class="nav flex justify-between items-center py-3">
+            <nav class="nav bg-appbg flex justify-between items-center py-3 px-4 sm:px-0">
                 <div class="logo">
                     <h1 class="text-[3.4rem] text-TiffanyBlue">WA.</h1>
                 </div>
                 <div>
-                    <ul class="menu justify-center items-center text-xl text-textcolor space-x-12 hidden xl:flex">
+                    <ul
+                        class=" bg-appbgmenu justify-center items-center text-xl text-textcolor space-x-12 hidden xl:flex">
                         <li>
                             <a href="#" class="text-TiffanyBlue">Home</a>
                         </li>
@@ -31,12 +32,45 @@
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    
+                    <div id="nav-icon3" class="xl:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- <div>
+                        <svg class=" xl:hidden width=" 54px" height="54px" viewBox="0 0 24.00 24.00"
+                            xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                stroke="#CCCCCC" stroke-width="0.4800000000000001"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path class="fill-TiffanyBlue stroke-TiffanyBlue" d="M3 12H21M3 6H21M3 18H21"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </div> -->
                 </div>
             </nav>
         </div>
+        <div class=" bg-appbg menu-open w-full h-[0vh] overflow-hidden bg-slate-600 flex justify-center pt-10">
+            <ul class="menu text-3xl space-y-11 text-center text-textcolor">
+                <li>
+                    <a href="#" class="text-TiffanyBlue">Home</a>
+                </li>
+                <li><a href="#">About us</a></li>
+
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
+    <script src="js/nav-icon.js"></script>
     <script src="js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
